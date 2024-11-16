@@ -4,7 +4,7 @@ FinAlgoritmo
 
 Funcion menu
 	Repetir
-		Escribir "   ::  Digite el año de nacimiento. Digite == 0 == para finalizar  ::  "
+		Escribir "   ::  Digite el aÃ±o de nacimiento. Digite == 0 == para finalizar  ::  "
 		Escribir " "
 		leer a
 		Aux=Edadactual(a)
@@ -23,7 +23,7 @@ Fin Funcion
 
 
 Funcion b <- Salida
-	Escribir "¿Seguro desea salir?"
+	Escribir "Â¿Seguro desea salir?"
 	Escribir "1. Si"
 	Escribir "2. No"
 	leer Nu
@@ -46,7 +46,7 @@ Funcion Validar ( Aux )
 		Escribir "Usuario valido"
 		Escribir "El usurio tiene: ",Aux
 	SiNo
-		Si Aux<=18 o (Aux>=55 Y Aux<=98) Entonces
+		Si (Aux>0 y Aux<=18) o (Aux>=55 Y Aux<=98) Entonces
 			Escribir "Usuario invalido"
 			Escribir "El usurio tiene: ",Aux
 			Si Aux<=18 Entonces
